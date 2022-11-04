@@ -118,6 +118,14 @@ span {
  width: 320px;
  max-height: 430px;
  margin-bottom: 10px;
+ padding: 5%;
+}
+
+.order{
+  width: 290px;
+  max-height: 400px;
+  margin-bottom: 10px;
+  padding: 5%;
 }
 
 .gallery img{
