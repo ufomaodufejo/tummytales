@@ -25,7 +25,7 @@ function Home() {
           <p>
             Behind every delicious and Soulfully made small chops and at the
             forefront of every great customer experience stands a passionate and
-            committed person. This is why <br />
+            committed person. This is why
             <span>"People Capability Always"</span> is a driving force within
             our business and the golden thread that runs through everything we
             do ever since our inception in 2017.
@@ -42,35 +42,36 @@ function Home() {
 
       <div className="categories">
         <h2>Our Products....</h2><hr></hr>
+        
         <div className="gallery-category">
 
           <div className="gallery">
-            <img src={smallchops} alt="smaachops" />
+            <img src={smallchops} alt="smallchops" />
             <div className="desc">Office Luncheon</div>
           </div>
 
           <div className="gallery">
-            <img src={partyplates} alt="smaachops" />
+            <img src={partyplates} alt="smallchops" />
             <div className="desc">Party Packs</div>
           </div>
 
           <div className="gallery">
-            <img src={platter} alt="smaachops" />
+            <img src={platter} alt="smallchops" />
             <div className="desc">Platters</div>
           </div>
 
           <div className="gallery">
-            <img src={freshwraps} alt="smaachops" />
+            <img src={freshwraps} alt="smallchops" />
             <div className="desc">Fresh Wraps</div>
           </div>
 
           <div className="gallery">
-            <img src={puffmix} alt="smaachops" />
+            <img src={puffmix} alt="smallchops" />
             <div className="desc">Puff-mix</div>
           </div>
 
           <div className="gallery">
-            <img src={event} alt="smaachops" />
+            <img src={event} alt="smallchops" />
             <div className="desc">Weddings and Events</div>
           </div>
         </div>

@@ -7,21 +7,28 @@ function Orders(props) {
       <div className="gallery-category">
 
         <div className="gallery">
-          <img src={props.img1} alt="smaachops" />
+          <img src={props.img1} alt="smallchops" />
           <Link to="login">
             <button className="btn1">Order Now</button>
           </Link>
         </div>
 
         <div className="gallery">
-          <img src={props.img2} alt="smaachops" />
+          <img src={props.img2} alt="smallchops" />
           <Link to="login">
             <button className="btn1">Order Now</button>
           </Link>
         </div>
 
         <div className="gallery">
-          <img src={props.img3} alt="smaachops" />
+          <img src={props.img3} alt="smallchops" />
+          <Link to="login">
+            <button className="btn1">Order Now</button>
+          </Link>
+        </div>
+
+        <div className="gallery">
+          <img src={props.img4} alt="smallchops" />
           <Link to="login">
             <button className="btn1">Order Now</button>
           </Link>

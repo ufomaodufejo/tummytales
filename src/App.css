@@ -96,7 +96,8 @@ span {
   margin: 20px auto;
   background-color: #f83c2e;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  color: white;padding: 20px;
+  color: white;
+  padding: 20px;
   overflow: hidden;
 }
 
@@ -106,26 +107,13 @@ span {
 
 
 .gallery-category {
-  max-width: 70%;
-  display: grid;
-  grid-template-columns: auto auto auto;
-  column-gap: 30px;
-  row-gap: 30px;
-  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .gallery{
- width: 320px;
- max-height: 430px;
- margin-bottom: 10px;
- padding: 5%;
-}
-
-.order{
-  width: 290px;
-  max-height: 400px;
-  margin-bottom: 10px;
-  padding: 5%;
+flex: 33.33%;
+padding: 10px;
 }
 
 .gallery img{

@@ -3,6 +3,7 @@ import Orders from "./Orders";
 import platter from "./assets/platter.jpg";
 import platter2 from "./assets/platter2.jpg";
 import platter3 from "./assets/platter3.jpg";
+import platter4 from "./assets/platter4.jpg";
 import moneybag from "./assets/moneybag.jpg";
 import freshwrap2 from "./assets/freshwrap2.jpg";
 import freshwrap3 from "./assets/freshwrap3.jpg";
@@ -36,7 +37,7 @@ function Menu() {
       <div className="dropdown">
         <button className="dropbtn" onClick={hideContent1}>Platters</button>
         <div id="myDropDown1" className="dropdown-content">
-            <Orders img1={platter} img2={platter2} img3={platter3}/>
+            <Orders img1={platter} img2={platter2} img3={platter3} img4={platter4}/>
         </div>
       </div>
       <div className="dropdown">
