@@ -5,10 +5,12 @@ import platter2 from "./assets/platter2.jpg";
 import platter3 from "./assets/platter3.jpg";
 import platter4 from "./assets/platter4.jpg";
 import moneybag from "./assets/moneybag.jpg";
+import freshwraps from "./assets/freshwraps.jpg";
 import freshwrap2 from "./assets/freshwrap2.jpg";
 import freshwrap3 from "./assets/freshwrap3.jpg";
 
 function Menu() {
+
   function hideContent1(){
     document.getElementById("myDropDown1").classList.toggle("show")
   }
@@ -30,7 +32,7 @@ function Menu() {
 
   return (
     <>
-    
+
     <div className="menu">
       <h1>Services we offer:</h1>
       <hr></hr>
@@ -43,7 +45,7 @@ function Menu() {
       <div className="dropdown">
         <button className="dropbtn" onClick={hideContent2}>Fresh Wraps</button>
         <div id="myDropDown2" className="dropdown-content">
-            <Orders img1={moneybag} img2={freshwrap2} img3={freshwrap3}/>
+            <Orders img1={moneybag} img2={freshwrap2} img3={freshwrap3} img4={freshwraps}/>
         </div>
       </div>
       <div className="dropdown">

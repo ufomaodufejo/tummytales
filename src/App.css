@@ -155,18 +155,20 @@ padding: 10px;
   text-align: center;
   margin: 20px;
   padding: 20px;
-  width: 50%;
+  width: 92%;
   font-size: 20px;
   font-weight: 700;
   border: none;
   border-radius: 20px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  background-color: #f83c2e;
 }
 
 .dropbtn:hover{
-  background-color: #f83c2e;
+  background-color: #b32c22;
   color: white;
 }
+
 .dropdown-content{
   display: none;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
@@ -307,3 +309,4 @@ textarea:focus {
 .promo img{
   max-height: 550px;
 }
+

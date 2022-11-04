@@ -21,7 +21,6 @@ function ContactUs() {
                     <button type='button' className='cancelbtn btn1'>Cancel</button>
                     <button type='submit' className='signupbtn btn1'>Send Message</button>
                 </div>
-
             </div>
         </form>
     </div>

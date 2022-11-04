@@ -1,4 +1,5 @@
 import React, { useContext} from "react";
+
 import { LoginContext } from "../Contexts/LoginContext";
 
 function Login() {
@@ -51,12 +52,13 @@ function Login() {
             <button type="button" className="cancelbtn btn1">
               Cancel
             </button>
-            <button type="submit" className="signupbtn btn1" >
+            <button type="submit" className="signupbtn btn1" onSubmit={handleSubmit}>
               Login
             </button>
           </div>
         </div>
       </form>
+      
     </div>
   );
 }

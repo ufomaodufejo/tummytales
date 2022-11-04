@@ -11,6 +11,7 @@ import { useState } from "react";
 import Profile from "./components/Profile";
 import { LoginContext } from "./Contexts/LoginContext";
 import NavBar from "./components/NavBar";
+import ModalWindow from "./components/ModalWindow";
 
 function App() {
   const [showProfile, setShowProfile] = useState(false);
@@ -18,13 +19,26 @@ function App() {
 
   return (
     <div className="App">
-      <NavBar/>
+      <NavBar />
       <ErrorBoundary>
-      <Routes>
-        <Route path="/" element={<Home />}/>
-        <Route path="/menu" element={<Menu />}>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/menu" element={<Menu />} />
+          <Route path="/contact-us" element={<ContactUs />} />
+          <Route path="/promos" element={<Promo />}>
+            <Route
+              path="login"
+              element={
+                <LoginContext.Provider
+                  value={{ fullname, setFullname, setShowProfile }}
+                >
+                  {showProfile ? <Profile /> : <Login />}
+                </LoginContext.Provider>
+              }
+            />
+          </Route>
           <Route
-            path="login"
+            path="/login"
             element={
               <LoginContext.Provider
                 value={{ fullname, setFullname, setShowProfile }}
@@ -33,27 +47,8 @@ function App() {
               </LoginContext.Provider>
             }
           />
-        </Route>
-        <Route
-          path="/contact-us"
-          element={<ContactUs />}
-        />
-        <Route
-          path="/promos"
-          element={<Promo />}
-        />
-        <Route
-          path="/login"
-          element={
-            <LoginContext.Provider
-              value={{ fullname, setFullname, setShowProfile }}
-            >
-              {showProfile ? <Profile /> : <Login />}
-            </LoginContext.Provider>
-          }
-        />
-        <Route path="*" element={<ErrorPage />} />
-      </Routes>
+          <Route path="*" element={<ErrorPage />} />
+        </Routes>
       </ErrorBoundary>
     </div>
   );
