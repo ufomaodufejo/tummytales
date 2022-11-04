@@ -43,13 +43,14 @@ function Home() {
       <div className="categories">
         <h2>Our Products....</h2><hr></hr>
         <div className="gallery-category">
+
           <div className="gallery">
             <img src={smallchops} alt="smaachops" />
             <div className="desc">Office Luncheon</div>
           </div>
 
           <div className="gallery">
-            <div className="box"><img src={partyplates} alt="smaachops" /></div>
+            <img src={partyplates} alt="smaachops" />
             <div className="desc">Party Packs</div>
           </div>
 
