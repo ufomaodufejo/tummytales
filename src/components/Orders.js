@@ -36,12 +36,6 @@ function Orders(props) {
           </Link>
         </div>
 
-        <div className="gallery">
-          <img src={props.img4} alt="smallchops" />
-          <Link>
-            <button className="btn1" onClick={handleOpen}>Order Now</button>
-          </Link>
-        </div>
       </div>
     </div>
   );

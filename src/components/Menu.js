@@ -39,13 +39,13 @@ function Menu() {
       <div className="dropdown">
         <button className="dropbtn" onClick={hideContent1}>Platters</button>
         <div id="myDropDown1" className="dropdown-content">
-            <Orders img1={platter} img2={platter2} img3={platter3} img4={platter4}/>
+            <Orders img1={platter} img2={platter2} img3={platter3} />
         </div>
       </div>
       <div className="dropdown">
         <button className="dropbtn" onClick={hideContent2}>Fresh Wraps</button>
         <div id="myDropDown2" className="dropdown-content">
-            <Orders img1={moneybag} img2={freshwrap2} img3={freshwrap3} img4={freshwraps}/>
+            <Orders img1={moneybag} img2={freshwrap2} img3={freshwrap3}/>
         </div>
       </div>
       <div className="dropdown">
