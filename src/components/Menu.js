@@ -3,9 +3,7 @@ import Orders from "./Orders";
 import platter from "./assets/platter.jpg";
 import platter2 from "./assets/platter2.jpg";
 import platter3 from "./assets/platter3.jpg";
-import platter4 from "./assets/platter4.jpg";
 import moneybag from "./assets/moneybag.jpg";
-import freshwraps from "./assets/freshwraps.jpg";
 import freshwrap2 from "./assets/freshwrap2.jpg";
 import freshwrap3 from "./assets/freshwrap3.jpg";
 
