@@ -11,7 +11,6 @@ import { useState } from "react";
 import Profile from "./components/Profile";
 import { LoginContext } from "./Contexts/LoginContext";
 import NavBar from "./components/NavBar";
-import ModalWindow from "./components/ModalWindow";
 
 function App() {
   const [showProfile, setShowProfile] = useState(false);
