@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 
 function Home() {
   return (
-    <>
+    <div className="home">
       <div className="mainpage">
         <div className="about">
           <h1>
@@ -76,7 +76,8 @@ function Home() {
           </div>
         </div>
       </div>
-    </>
+
+    </div>
   );
 }
 
