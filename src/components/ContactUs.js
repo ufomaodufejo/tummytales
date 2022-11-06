@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function ContactUs() {
   return (
@@ -19,7 +20,9 @@ function ContactUs() {
 
                 <div className='clearfix'>
                     <button type='button' className='cancelbtn btn1'>Cancel</button>
-                    <button type='submit' className='signupbtn btn1'>Send Message</button>
+                    <Link to ="/*">
+                    <button type='submit' className='signupbtn btn1' >Send Message</button>
+                    </Link>
                 </div>
             </div>
         </form>
