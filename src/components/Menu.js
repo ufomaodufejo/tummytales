@@ -6,6 +6,18 @@ import platter3 from "./assets/platter3.jpg";
 import moneybag from "./assets/moneybag.jpg";
 import freshwrap2 from "./assets/freshwrap2.jpg";
 import freshwrap3 from "./assets/freshwrap3.jpg";
+import partyplates1 from "./assets/partyplates1.jpg";
+import partyplates2 from "./assets/partyplates2.jpg";
+import partyplates3 from "./assets/partyplates3.jpg";
+import grills from "./assets/grills.jpg";
+import grills2 from "./assets/grills2.jpg";
+import grills3 from "./assets/grills3.jpg";
+import events from "./assets/events.jpg";
+import events2 from "./assets/events2.jpg";
+import events3 from "./assets/events3.jpg";
+import puffmix from "./assets/puffmix.jpg";
+import puffmix2 from "./assets/puffmix2.jpg";
+import puffmix3 from "./assets/puffmix3.jpg";
 
 function Menu() {
 
@@ -49,25 +61,25 @@ function Menu() {
       <div className="dropdown">
         <button className="dropbtn" onClick={hideContent3}>Party Packs</button>
         <div id="myDropDown3" className="dropdown-content">
-            <Orders/>
+            <Orders img1={partyplates1} img2={partyplates2} img3={partyplates3}/>
         </div>
       </div>
       <div className="dropdown">
-        <button className="dropbtn" onClick={hideContent4}>Office Luncheon</button>
+        <button className="dropbtn" onClick={hideContent4}>Grills</button>
         <div id="myDropDown4" className="dropdown-content">
-            <Orders/>
+            <Orders img1={grills} img2={grills2} img3={grills3}/>
         </div>
       </div>
       <div className="dropdown">
         <button className="dropbtn" onClick={hideContent5}>Puff-Mix</button>
         <div id="myDropDown5" className="dropdown-content">
-            <Orders/>
+            <Orders img1={puffmix} img2={puffmix2} img3={puffmix3}/>
         </div>
       </div>
       <div className="dropdown">
         <button className="dropbtn" onClick={hideContent6}>Weddings and Events</button>
         <div id="myDropDown6" className="dropdown-content">
-            <Orders/>
+            <Orders img1={events} img2={events2} img3={events3}/>
         </div>
       </div>
     </div>
