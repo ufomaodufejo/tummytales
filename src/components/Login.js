@@ -1,22 +1,28 @@
-import React, { useContext} from "react";
-
-import { LoginContext } from "../Contexts/LoginContext";
+import React, { useState} from "react";
+import { useLocation, useNavigate } from "react-router-dom";
+import { useAuth } from "../Contexts/LoginContext";
 
 function Login() {
-  const {setFullname, setShowProfile} = useContext(LoginContext)
+  const [user, setUser] = useState("")
+  const auth = useAuth()
+  const navigate = useNavigate()
+  const location = useLocation()
 
-  function handleSubmit(e){
+  const redirectPath = location.state?.path || "/"
+
+  const handleLogin = (e) => {
     e.preventDefault()
-    setShowProfile(true)
+    auth.login(user)
+    navigate(redirectPath, {replace : true})
   }
+
 
   return (
     <div>
-      <form onSubmit={handleSubmit} className="form">
+      <form onSubmit={handleLogin} className="form">
         <div className="container">
           <h2>Login</h2>
           <hr></hr>
-
           <label for="fullname">
             <b>Full Name</b>
           </label>
@@ -25,7 +31,7 @@ function Login() {
             name="fullname"
             placeholder="Enter Full Name"
             required
-            onChange={(e) => {setFullname(e.target.value)}}
+            onChange={(e) => {setUser(e.target.value)}}
           />
 
           <label for="email">
@@ -52,7 +58,7 @@ function Login() {
             <button type="button" className="cancelbtn btn1">
               Cancel
             </button>
-            <button type="submit" className="signupbtn btn1" onSubmit={handleSubmit}>
+            <button type="submit" className="signupbtn btn1" onClick={handleLogin}>
               Login
             </button>
           </div>
