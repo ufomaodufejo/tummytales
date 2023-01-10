@@ -392,6 +392,13 @@ input[type="search"]{
   padding: 10px;
   position: inherit;
 }
+/* .cartitems{
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  font-weight: 700;
+  border-radius: 50%;
+} */
 .qtydiv{
   width: 100%;
   margin: 20px auto;

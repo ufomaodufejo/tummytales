@@ -1,8 +1,7 @@
-import React, { useContext } from "react";
-import { LoginContext, useAuth } from "../Contexts/LoginContext";
+import React from "react";
+import { useAuth } from "../Contexts/LoginContext";
 import avatar from "./assets/avatar.png";
 import { useNavigate } from "react-router-dom";
-import ModalWindow from "./ModalWindow";
 
 function Profile() {
  const auth = useAuth()
@@ -11,12 +10,10 @@ function Profile() {
   auth.logout()
   navigate('/')
  }
-//  console.log("auth",auth)
 
   return (
     <div>
     <div className="card">
-       {/* <ModalWindow open={open} handleClose={handleClose} />  */}
       <img
         className="card-image"
         src={avatar}

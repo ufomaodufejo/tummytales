@@ -1,17 +1,19 @@
-import React, {useState} from "react";
+import React  from "react";
 import { FaShoppingCart } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import Card from "./Card";
 import menudata from "./menudata";
 import { useAuth } from "../Contexts/LoginContext";
-
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function Menu() {
-  const auth = useAuth()
+  const auth = useAuth();
 
   function handleSubmits(e) {
     e.preventDefault();
   }
+
   return (
     <div className="menuheader">
       <div className="search">
@@ -25,14 +27,24 @@ function Menu() {
           <Link to="/cart">
             <FaShoppingCart size={30} />
           </Link>
-          <p>{auth.cartItems.length > 0 && auth.cartItems.length}</p>
+          <p className="cartitems">{auth.cartItems.length > 0 && auth.cartItems.length}</p>
         </div>
       </div>
 
       <div className="menu">
         {menudata.map((menu) => {
-          return <Card key={menu.id} menu={menu} onAdd={()=>auth.addtocart(menu)} />;
+          return (
+            <Card
+              key={menu.id}
+              menu={menu}
+              onAdd={() => {
+                auth.addtocart(menu);
+                toast("Product added successfully!");
+              }}
+            />
+          );
         })}
+        <ToastContainer />
       </div>
     </div>
   );

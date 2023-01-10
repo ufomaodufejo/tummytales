@@ -3,7 +3,7 @@ import EmptyCart from './EmptyCart'
 import ShoppedCart from './ShoppedCart'
 import { useAuth } from "../Contexts/LoginContext";
 
-function Cartpage({}) {
+function Cartpage() {
   const auth = useAuth()
   return (
     <div>

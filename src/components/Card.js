@@ -2,10 +2,6 @@ import React from 'react'
 
 export default function Card(props) {
   const {menu} = props
-
-  // const onAdd = (product) => {
-  //   props.onAdd({title: menu.title, price: menu.price, qty:1})
-  // }
   
   return (
     <div className="menucard">

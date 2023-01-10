@@ -1,11 +1,9 @@
 import React, { useState } from "react";
 import grills from "./assets/grills.jpg";
-import { useAuth } from "../Contexts/LoginContext";
+
 
 function ShoppedCart() {
-  const auth = useAuth();
   const [counter, setcounter] = useState(1);
-
   const handleIncrement = () => {
     setcounter(count => count + 1 );
   }
