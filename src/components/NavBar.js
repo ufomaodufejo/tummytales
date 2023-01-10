@@ -21,9 +21,6 @@ function NavBar() {
           <NavLink to="/promos">
             <li>Promos</li>
           </NavLink>
-          {/* <NavLink to="/contact-us">
-            <li>Contact Us</li>
-          </NavLink> */}
           <NavLink to="/profile">
             <li>Profile</li>
           </NavLink>

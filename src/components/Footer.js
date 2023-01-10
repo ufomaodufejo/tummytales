@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "./assets/logo.png";
 import { SocialIcon } from "react-social-icons";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -14,7 +15,6 @@ function Footer() {
             also sell freshwraps smallchops.
           </p>
         </div>
-        <div className="somedetails">Footer</div>
         <div className="businesshours">
           <h4>Business Hours </h4> 
           <p>Mon: 9:00 AM – 6:00 PM </p>
@@ -24,13 +24,18 @@ function Footer() {
           <p>Fri: 9:00 AM – 6:00 PM</p>
           <p>Sat: 9:00 AM – 6:00 PM </p>
         </div>
+        <div className="contactdetails">
+          <Link to="/contact-us">
+          <button >Contact Us</button>
+          </Link>
+        </div>
       </div>
       <hr></hr>
 
       <div className="socials">
         <div className="socialsdetails">
           <SocialIcon
-            url="https://instagram.com/in/jaketrent"
+            url="https://instagram.com/tummytales.ng"
             style={{ height: 40, width: 40 }}
           />
         </div>
@@ -42,7 +47,8 @@ function Footer() {
         </div>
         <div className="socialsdetails">
           <SocialIcon
-            url="https://whatsapp.com/in/jaketrent"
+          network="whatsapp"
+            url="http://wa.me/2348091590666"
             style={{ height: 40, width: 40 }}
           />
         </div>
