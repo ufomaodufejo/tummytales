@@ -798,15 +798,12 @@ hr{
   .nav-links ul{
     font-size: 10px;
     gap: 5px;
-    border: 1px solid blue;
     width: 100%
    }
   .slider{
-    border: 1px solid green;
     height: 300px;
   }
   .sliderimage{
-    border: 2px solid blue;
     width: 350px;
     height: 250px;
   }
