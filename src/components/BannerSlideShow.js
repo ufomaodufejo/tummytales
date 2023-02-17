@@ -28,7 +28,7 @@ const BannerSlideShow = ({slides}) => {
             <div className={index === current ? 'slide active' : 'slide'} key={index}>
               {
                 index === current && (
-                  <img src={slide.image} alt='smallchops' className='image' />)
+                  <img src={slide.image} alt='smallchops' className='sliderimage' />)
               }
             </div>
           )
