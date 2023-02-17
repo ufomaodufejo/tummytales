@@ -31,7 +31,6 @@ function Footer() {
         </div>
       </div>
       <hr></hr>
-
       <div className="socials">
         <div className="socialsdetails">
           <SocialIcon
@@ -41,7 +40,7 @@ function Footer() {
         </div>
         <div className="socialsdetails">
           <SocialIcon
-            url="https://facebook.com/in/jaketrent"
+            url="https://facebook.com/in/tummytales"
             style={{ height: 40, width: 40 }}
           />
         </div>

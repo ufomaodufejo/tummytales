@@ -828,11 +828,12 @@ hr{
     flex-direction: column;
     width: 90%;
     align-items: start;
-    gap: 5px;
+    gap: 10px;
   }
 
   .facts-details p{
     width: 100%;
+    height: fit-content;
   }
 
   h1 {
