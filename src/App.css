@@ -798,8 +798,9 @@ hr{
   .nav-links ul{
     font-size: 10px;
     gap: 5px;
-    width: 100%
+    width: 100%;
    }
+
   .slider{
     height: 300px;
   }
@@ -808,10 +809,6 @@ hr{
     height: 250px;
   }
   
-  .mainpage {
-    width: 370px;
-  }
-
   .about{
     width: 100%;
   }
@@ -826,6 +823,18 @@ hr{
   .facts{
     width: 100%;
   }
+
+  .facts-details{
+    flex-direction: column;
+    width: 90%;
+    align-items: start;
+    gap: 5px;
+  }
+
+  .facts-details p{
+    width: 100%;
+  }
+
   h1 {
     font-size: 15px;
   }
